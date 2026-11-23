@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f5ff;
+    color: #20213a;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #11132d;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    color: #a78bfa;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #67e8f9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Main Sections */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section,
+aside {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #11132d12;
+}
+
+h2 {
+    color: #5141a5;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #22244b;
+}
+
+article {
+    background: #f0edff;
+    padding: 18px;
+    margin: 12px 0;
+    border-left: 4px solid #7957e8;
+    border-radius: 8px;
+}
+
+/* Form */
+form {
+    max-width: 650px;
+}
+
+fieldset {
+    border: 1px solid #b9b0e8;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+legend {
+    color: #5141a5;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #aaa5c5;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #67e8f9;
+    border-color: #5141a5;
+}
+
+button {
+    background: #5141a5;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover,
+button:focus {
+    background: #30246f;
+    outline: 3px solid #67e8f9;
+}
+
+/* Footer */
+footer {
+    background: #11132d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 18px;
+    }
+}

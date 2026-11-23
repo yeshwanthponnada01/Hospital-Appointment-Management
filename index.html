@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Hospital Patient Appointment Management Website">
+
+    <title>HealthCare Hospital | Appointments</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>HealthCare Hospital</h1>
+        <p>Your Health, Our Priority</p>
+
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to HealthCare Hospital</h2>
+
+            <p>
+                We provide quality healthcare services
+                with experienced doctors and modern facilities.
+            </p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+
+            <h2>Our Medical Services</h2>
+
+            <article>
+                <h3>Cardiology</h3>
+                <p>Expert heart care and treatment.</p>
+            </article>
+
+            <article>
+                <h3>Neurology</h3>
+                <p>Advanced brain and nervous system care.</p>
+            </article>
+
+            <article>
+                <h3>Orthopedics</h3>
+                <p>Bone, joint and muscle treatments.</p>
+            </article>
+
+        </section>
+
+        <!-- Doctors Section -->
+        <section id="doctors">
+
+            <h2>Our Doctors</h2>
+
+            <article>
+                <h3>Dr. Rahul Sharma</h3>
+                <p>Cardiologist</p>
+                <p>Experience: 10 Years</p>
+            </article>
+
+            <article>
+                <h3>Dr. Priya Reddy</h3>
+                <p>Neurologist</p>
+                <p>Experience: 8 Years</p>
+            </article>
+
+        </section>
+
+        <!-- Additional Information -->
+        <aside>
+            <h2>Emergency Services</h2>
+            <p>Emergency care is available 24/7.</p>
+        </aside>
+
+        <!-- Appointment Form -->
+        <section id="appointment">
+
+            <h2>Book Your Appointment</h2>
+
+            <form action="#" method="get">
+
+                <fieldset>
+
+                    <legend>Patient Information</legend>
+
+                    <label for="name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required>
+
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter 10 digit number"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        autocomplete="tel"
+                        required>
+
+                    <label for="date">Appointment Date:</label>
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required>
+
+                    <label for="department">Select Department:</label>
+                    <select id="department" name="department" required>
+                        <option value="">Choose Department</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                    </select>
+
+                    <label for="doctor">Select Doctor:</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="">Choose Doctor</option>
+                        <option value="rahul">Dr. Rahul Sharma</option>
+                        <option value="priya">Dr. Priya Reddy</option>
+                    </select>
+
+                    <label for="message">Additional Information:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Describe your concern">
+                    </textarea>
+
+                    <button type="submit">
+                        Book Appointment
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 HealthCare Hospital. All Rights Reserved.</p>
+        <p>Contact: healthcare@example.com</p>
+    </footer>
+
+</body>
+</html>
